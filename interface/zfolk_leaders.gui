@@ -1,0 +1,163 @@
+###
+# This file is part of a project hosted at https://github.com/stellaris-mods
+# Copyright (c) 2018 folk@folk.wtf
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software Foundation,
+# Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
+###
+
+
+guiTypes = {
+	containerWindowType = {
+		name = "planet_list_leaders_entry"
+		size = { width = 298 height = 68 }
+		orientation = upper_left
+
+		background = {
+			name = "planet_list_leaders_entry_background"
+			quadTextureSprite = "GFX_outliner_header_bg"
+			clicksound = assign_leader_click
+		}
+
+		# ???
+		containerWindowType = {
+			name = "selected"
+			position = { x = 0 y = 0 }
+			size = { width = 100% height = 100% }
+
+			background = {
+				name = "selected_bg"
+				spriteType = "GFX_glow_tile_orange"
+				alwaysTransparent = yes
+			}
+		}
+
+		buttonType = {
+			name = "leader_type_bg"
+			quadTextureSprite = "GFX_leader_bg_admiral"
+			position = { x = 8 y = 8 }
+			scale = 0.14
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 8 y = 8 }
+			size = { width = 64 height = 76 }
+			clipping = yes
+
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_character"
+				frame = 1
+				scale = 0.2
+				alwaysTransparent = yes
+				position = { x = -45 y = -24 }
+			}
+		}
+
+		instantTextBoxType = {
+			name = "leader_title"
+			font = "cg_16b"
+			text = "LEADER_TITLE"
+			position = { x = -100 y = -100 }
+			maxWidth = 120
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			alwaysTransparent = yes
+		}
+
+		buttonType = {
+			name = "rename_button"
+			quadTextureSprite = "gfx_transparency_button"
+			position = { x = 54 y = 2 }
+			size = { x = 278 y = 18 }
+		}
+
+		instantTextBoxType = {
+			name = "leader_name"
+			font = "cg_16b"
+			text = "LEADER_NAME"
+			position = { x = 56 y = 4 }
+			maxWidth = 150
+			maxHeight = 40
+			fixedSize = yes
+			format = left
+			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "char_age_label"
+			font = "cg_16b"
+			text = "AGE"
+			position = { x = 180 y = 4 }
+			maxWidth = 60
+			maxHeight = 20
+			format = right
+		}
+
+		instantTextBoxType = {
+			name = "leader_age"
+			font = "cg_16b"
+			text = "?"
+			position = { x = 240 y = 4 }
+			maxWidth = 26
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			text_color_code = "H"
+		}
+
+		iconType = {
+			name ="leader_skill"
+			spriteType = "GFX_leader_skill"
+			position = { x = 120 y = 15 }
+		}
+
+		iconType = {
+			name = "experience"
+			spriteType = "GFX_control_group_progress"
+			position = { x = 56 y = 22 }
+		}
+
+		instantTextBoxType = {
+			name = "leader_status"
+			font = "cg_16b"
+			text = "STATUS"
+			position = { x = 56 y = 30 }
+			maxWidth = 180
+			maxHeight = 40
+			fixedSize = yes
+			format = left
+		}
+
+		OverlappingElementsBoxType = {
+			name = "traits"
+			position = { x = 56 y = 30 }
+			size = { x = 244 y = 8 }
+			format = right
+			spacing = -8
+		}
+
+		buttonType = {
+			name = "dismiss"
+			quadTextureSprite = "GFX_close_button_planet"
+			position = { x = -30 y = 7 }
+			orientation = "UPPER_RIGHT"
+			scale = 0.6
+		}
+	}
+}

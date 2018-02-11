@@ -160,4 +160,122 @@ guiTypes = {
 			scale = 0.6
 		}
 	}
+
+
+	containerWindowType = {
+		name = "leader_pool_entry"
+		size = { width = 810 height = 34 }
+
+		background = {
+			name = "planet_list_leaders_entry_background"
+			quadTextureSprite = "GFX_outliner_header_bg"
+		}
+
+		buttonType = {
+			name = "portrait_bg"
+			quadTextureSprite = "GFX_leader_bg_admiral"
+			position = { x = -1000 y = -1000 }
+			scale = 0.20
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 7 y = 7 }
+			size = { width = -1000 height = -1000 }
+			clipping = yes
+
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_character"
+				frame = 1
+				scale = 0.26
+				alwaysTransparent = yes
+				position = { x = -50 y = -15 }
+			}
+		}
+
+		iconType = {
+			name = "leader_icon"
+			spriteType = "GFX_leader_icons"
+			frame = 1
+			position = { x = 90 y = 0 }
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "leader_title"
+			font = "cg_16b"
+			text = "LEADER_TITLE"
+			position = { x = -1000 y = -1000 }
+			maxWidth = 234
+			maxHeight = 40
+			fixedSize = yes
+			format = left
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "leader_name"
+			font = "cg_16b"
+			text = "LEADER_NAME"
+			position = { x = 120 y = 8 }
+			maxWidth = 130
+			maxHeight = 60
+			fixedSize = yes
+			format = left
+			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+
+		### age, skill, traits ###
+
+		instantTextBoxType = {
+			name = "leader_age"
+			font = "cg_16b"
+			text = "00"
+			position = { x = 254 y = 8 }
+			maxWidth = 80
+			maxHeight = 20
+			fixedSize = yes
+			format = center
+			text_color_code = "H"
+		}
+
+		iconType = {
+			name = "leader_skill"
+			spriteType = "GFX_leader_skill"
+			position = { x = 330 y = 6 }
+		}
+
+		OverlappingElementsBoxType = {
+			name = "traits"
+			position = { x = 414 y = 3 }
+			size = { x = 150 y = 16 }
+			format = left
+			spacing = -8
+		}
+
+		instantTextBoxType = {
+			name = "leader_cost"
+			font = "cg_16b"
+			text = "-666"
+			position = { x = 560 y = 8 }
+			maxWidth = 80
+			maxHeight = 20
+			fixedSize = yes
+			format = center
+			text_color_code = "H"
+		}
+
+		buttonType = {
+			name = "recruit_leader"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			orientation = UPPER_RIGHT
+			position = { x = -160 y = -12 }
+			buttonFont = "cg_16b"
+			buttonText = "RECRUIT"
+			oversound = menu_over_01
+		}
+	}
 }

@@ -6,7 +6,7 @@ return {
 	picture = "thumb.png",
 	supported_version = "1.9.*",
 	originalUploader = "folk",
-	--remote_file_id = 0,
+	remote_file_id = false,
 	readme = "readme.md",
 	steambb = "steam.bbcode",
 }

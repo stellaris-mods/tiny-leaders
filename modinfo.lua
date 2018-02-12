@@ -7,6 +7,6 @@ return {
 	supported_version = "1.9.*",
 	originalUploader = "folk",
 	remote_file_id = false,
-	readme = "readme.md",
+	readme = "README.md",
 	steambb = "steam.bbcode",
 }

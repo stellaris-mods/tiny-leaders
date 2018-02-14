@@ -181,17 +181,16 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "portrait"
-			position = { x = 7 y = 7 }
-			size = { width = -1000 height = -1000 }
+			position = { x = 10 y = -14 }
+			size = { width = 64 height = 76 }
 			clipping = yes
 
 			iconType = {
 				name = "portrait"
 				spriteType = "GFX_portrait_character"
 				frame = 1
-				scale = 0.26
-				alwaysTransparent = yes
-				position = { x = -50 y = -15 }
+				scale = 0.14
+				position = { x = 0 y = 0 }
 			}
 		}
 
